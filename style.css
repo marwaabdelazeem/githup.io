@@ -1,0 +1,417 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Cardo', serif;
+  color: #1C3B3A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alatsi', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+#header {
+  height: 100vh;
+  background: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.surveycrest.com%2Fblog%2Fwp-content%2Fuploads%2F2020%2F02%2FBusiness-Development.png&tbnid=AIAYJVyhwx2GGM&vet=12ahUKEwi0wLn20bT-AhVkvUwKHcVdBw8QMygPegUIARD-AQ..i&imgrefurl=https%3A%2F%2Fwww.surveycrest.com%2Fblog%2Fbusiness-development-goals%2F&docid=LTs8gTjEs-qblM&w=830&h=400&q=business%20development&ved=2ahUKEwi0wLn20bT-AhVkvUwKHcVdBw8QMygPegUIARD-AQ') center center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+#header h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  color: #000;
+}
+
+/* What I can give to you Section */
+#what-i-can-give {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#what-i-can-give .section-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #FFD4B2;
+}
+
+#what-i-can-give .section-text {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+#what-i-can-give ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#what-i-can-give li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* Hire Me Section */
+#hire-me {
+  background-color: #FF5757;
+  padding: 50px 0;
+  text-align: center;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#hire-me .section-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+3 / 3
+
+/* Portfolio Section */
+.portfolio-section {
+background: linear-gradient(to bottom right, #FF5757, #8C52FF);
+padding: 80px 0;
+}
+
+.portfolio-section .section-title {
+font-family: 'Alatsi', sans-serif;
+font-size: 40px;
+color: #fff;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.portfolio-section .carousel {
+position: relative;
+margin: 0 auto;
+max-width: 1000px;
+}
+
+.portfolio-section .carousel .slide {
+display: none;
+width: 100%;
+height: auto;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.portfolio-section .carousel .slide.active {
+display: block;
+}
+
+.portfolio-section .carousel .slide img {
+width: 100%;
+height: auto;
+}
+
+.portfolio-section .carousel .controls {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+}
+
+.portfolio-section .carousel .controls .arrow {
+display: block;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 50px;
+height: 50px;
+background-color: rgba(255, 255, 255, 0.6);
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+font-size: 24px;
+color: #fff;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+.portfolio-section .carousel .controls .arrow:hover {
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-section .carousel .controls .arrow.left {
+left: 10px;
+}
+
+.portfolio-section .carousel .controls .arrow.right {
+right: 10px;
+}
+
+/* Contact Me Section */
+.contact-section {
+background: #fff;
+padding: 80px 0;
+}
+
+.contact-section .section-title {
+font-family: 'Alatsi', sans-serif;
+font-size: 40px;
+color: #1C3B3A;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.contact-section .contact-details {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.contact-section .contact-details .email {
+margin-right: 30px;
+}
+
+.contact-section .contact-details .email a {
+display: block;
+font-size: 24px;
+color: #1C3B3A;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+.contact-section .contact-details .email a:hover {
+color: #FFD4B2;
+}
+
+.contact-section .contact-details .phone {
+margin-left: 30px;
+}
+
+.contact-section .contact-details .phone span {
+display: block;
+font-size: 24px;
+color: #1C3B3A;
+transition: all 0.3s ease-in-out;
+}
+
+.contact-section .contact-details .phone span:hover {
+color: #FFD4B2;
+cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+.portfolio-section .carousel .controls .arrow {
+width: 40px;
+height: 40px;
+line-height: 40px;
+font-size: 20px;
+}
+}
+
+@media (max-width:
+768px) {
+
+.portfolio-container {
+grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 576px) {
+
+.portfolio-container {
+grid-template-columns: 1fr;
+}
+
+}
+
+/* Contact Section */
+
+.contact-container {
+background-color: #1F4068;
+color: white;
+padding: 80px 0;
+}
+
+.contact-title {
+font-size: 48px;
+font-family: Alatsi;
+margin-bottom: 30px;
+}
+
+.contact-info {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact-info-item {
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.contact-info-icon {
+font-size: 32px;
+margin-right: 20px;
+}
+
+.contact-info-text {
+font-size: 24px;
+}
+
+.contact-form {
+margin-top: 50px;
+}
+
+.contact-form-label {
+display: block;
+font-size: 24px;
+font-family: Alatsi;
+margin-bottom: 10px;
+}
+
+.contact-form-input {
+width: 100%;
+padding: 10px;
+font-size: 18px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+background-color: #FFFFFF;
+}
+
+.contact-form-textarea {
+width: 100%;
+padding: 10px;
+font-size: 18px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+background-color: #FFFFFF;
+resize: none;
+}
+
+.contact-form-submit {
+padding: 15px 50px;
+background-color: #FFD4B2;
+color: #1C3B3A;
+font-size: 24px;
+font-family: Alatsi;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.contact-form-submit:hover {
+background-color: #1C3B3A;
+color: #FFD4B2;
+}
+
+/* Footer Section */
+
+.footer-container {
+background-color: #1C3B3A;
+color: white;
+padding: 50px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-logo {
+font-size: 48px;
+font-family: Alatsi;
+}
+
+.footer-social {
+display: flex;
+align-items: center;
+}
+
+.footer-social-link {
+color: white;
+font-size: 24px;
+margin-right: 20px;
+}
+
+.footer-social-link:hover {
+color: #FFD4B2;
+}
+/* Contact Me Section */
+.contact {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.contact-title {
+  color: #1C3B3;
+  font-family: Alatsi, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  margin: 20px;
+}
+
+.contact-item i {
+  color: #FFD4B2;
+  font-size: 36px;
+  margin-right: 20px;
+}
+
+.contact-item a {
+  color: #333333;
+  font-family: Cardo, serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #1C3B3;
+}
+
+.contact-item span {
+  font-family: Cardo, serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
